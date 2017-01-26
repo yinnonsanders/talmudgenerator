@@ -1,1 +1,1 @@
-web: gunicorn talmudgenerator:app
+web: gunicorn manage:app
