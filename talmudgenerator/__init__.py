@@ -7,4 +7,4 @@ app.config.update(dict(
     DATABASE=os.path.join(app.root_path, 'talmudgenerator.db')
 ))
 
-import talmudgenerator.views
+import talmudgenerator.talmudgenerator
