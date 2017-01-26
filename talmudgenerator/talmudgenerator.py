@@ -52,8 +52,8 @@ def show_entries():
 def add_entry():
 	db = get_db()
 	seed = request.form["seed"]
-	text = predict_text(seed)
 	try:
+		text = predict_text(seed)
 		db.execute('insert into entries (seed, text) values (?, ?)', [seed, text])
 		db.execute('delete from entries where id in (select id from entries order by id desc limit -1 offset 1000)')
 		db.commit()
