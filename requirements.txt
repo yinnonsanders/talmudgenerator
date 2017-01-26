@@ -1,5 +1,6 @@
 Flask==0.11.1
 Flask-Bootstrap==3.3.7.1
+Flask-Script==2.0.5
 gunicorn==19.6.0
 Keras==1.2.0
 numpy==1.11.1
