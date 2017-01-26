@@ -1,0 +1,9 @@
+MANIFEST.in
+talmudgenerator/__init__.py
+talmudgenerator/talmudgenerator.py
+talmudgenerator/text_prediction.py
+talmudgenerator.egg-info/PKG-INFO
+talmudgenerator.egg-info/SOURCES.txt
+talmudgenerator.egg-info/dependency_links.txt
+talmudgenerator.egg-info/requires.txt
+talmudgenerator.egg-info/top_level.txt

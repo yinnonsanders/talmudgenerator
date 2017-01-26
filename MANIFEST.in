@@ -1,0 +1,3 @@
+graft talmudgenerator/templates
+graft talmudgenerator/static
+include talmudgenerator/schema.sql

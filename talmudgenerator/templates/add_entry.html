@@ -1,0 +1,16 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}Talmud Generator{% endblock %}
+{% block body %}
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6 col-md-offset-3">
+      {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+      {% if text %}
+        <h1>Your sugya</h1>
+        <p dir="rtl">{{ text|safe }}</p>
+      {% endif %}
+      <a class="btn btn-primary" href="{{ url_for('show_entries') }}" role="button">Return</a>
+  </div>
+  </div>
+</div>
+{% endblock %}
