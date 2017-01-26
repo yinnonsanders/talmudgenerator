@@ -7,19 +7,17 @@ import numpy as np
 import random
 import os
 
-import talmudgenerator
-
 maxlen = 40
 
 # read file
-file_path = os.path.join(talmudgenerator.app.root_path, 'talmud.txt')
+file_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'talmud.txt')
 text = open(file_path,'r').read()
 
 chars = sorted(list(set(text)))
 char_indices = dict((c, i) for i, c in enumerate(chars))
 indices_char = dict((i, c) for i, c in enumerate(chars))
 
-model_path = os.path.join(talmudgenerator.app.root_path, 'talmud_model.h5')
+model_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'talmud_model.h5')
 
 def get_data():
 	# cut the text in semi-redundant sequences of maxlen characters
